@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form class="mt-5" (ngSubmit)="signIn()" [formGroup]="therapistLogin">
+          <div class="form-row mb-4">
+            <div class="col">
+                <label>Email</label>
+                <input type="email" class="form-control" formControlName="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-row">
+              <div class="col">
+                  <label>Password</label>
+                  <input type="text" class="form-control" formControlName="password" #password placeholder="Password">
+              </div>
+          </div>
+
+
+          <div class="row mt-4">
+            <div class="col-md">
+                <button type="submit" class="btn btn-primary btn-lg" (click)="signIn()">Sign in</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+</body>
+</html>

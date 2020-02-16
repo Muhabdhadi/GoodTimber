@@ -1,0 +1,10 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+.jumbotron {
+  /* padding: 10rem; */
+  padding: 12.5rem;
+  margin: 0px;
+}
